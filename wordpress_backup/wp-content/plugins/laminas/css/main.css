@@ -1,0 +1,230 @@
+@charset "UTF-8";
+input[type="text"],
+input[type="number"] {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#main_image_wrap {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+#main_image_wrap #image_wrap {
+  overflow-y: hidden;
+}
+
+#main_image_wrap #image_wrap img {
+  width: 100%;
+  height: auto;
+}
+
+#main_image_wrap input,
+#main_image_wrap button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#main_image_wrap #open_media_manager {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  line-height: 15px;
+  height: 50px;
+}
+
+fieldset {
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+fieldset legend {
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.input_wrap {
+  margin-bottom: 10px;
+}
+
+.input_wrap label {
+  font-size: 10px;
+}
+
+.input_wrap p {
+  margin: 0;
+}
+
+/**
+Máscaras
+*/
+#mascaras {
+  display: none;
+}
+
+.mascara_imagem {
+  background-color: white;
+}
+
+#mascaras_wrap .mascara {
+  background: #ccc;
+  padding: 5px;
+}
+
+#mascaras_wrap .mascara img {
+  width: 120px;
+  height: auto;
+}
+
+#mascaras_wrap .mascara input {
+  display: inline;
+}
+
+/**
+Description
+*/
+#textarea_wrap {
+  position: relative;
+  height: 300px;
+}
+
+#textarea_wrap textarea, #textarea_wrap #textarea_text {
+  padding: 5px;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  line-height: 18px;
+}
+
+#textarea_wrap textarea {
+  color: transparent;
+  background: transparent;
+  z-index: 2;
+  resize: none;
+  caret-color: black;
+}
+
+#textarea_wrap #textarea_text {
+  z-index: 1;
+  color: #000;
+}
+
+#textarea_wrap #textarea_text .blue {
+  color: #c45725;
+}
+
+.success {
+  background-color: #076107;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+.error {
+  background-color: #791010;
+  color: #fff;
+  padding: 5px 15px;
+}
+
+/* ----- color picker ----- */
+.wp-picker-container {
+  display: block;
+}
+
+.wp-picker-container.wp-picker-active {
+  position: relative;
+}
+
+.wp-picker-container.wp-picker-active .wp-picker-holder {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  z-index: 5;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ----- detalhamento de zoom ----- */
+.detalhe .controllers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eee;
+  height: 200px;
+  min-width: calc(70px + 70px + 200px);
+}
+
+.detalhe .metadados .just_read {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.detalhe .metadados .just_read input {
+  width: 50px;
+  padding: 2px;
+}
+
+.range_wrap label {
+  display: block;
+  padding-bottom: 12px;
+}
+
+.range_wrap input[type=range] {
+  width: 200px;
+}
+
+.range_wrap input[type=range].top {
+  -webkit-transform: rotate(180deg) translateY(15px);
+          transform: rotate(180deg) translateY(15px);
+}
+
+.range_wrap.vertical {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.detail_box {
+  position: absolute;
+  border: 2px solid #000;
+}
+
+.detail_box h5 {
+  position: absolute;
+  top: -21px;
+  left: -2px;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+#detalhes {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

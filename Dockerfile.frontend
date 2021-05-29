@@ -1,10 +1,10 @@
 FROM node:13-alpine as build_stage
 
 WORKDIR /app
-COPY package.json .
-COPY .env.docker .env
+COPY frontend/package.json .
+COPY .env.frontend .env
 RUN yarn
-COPY . .
+COPY /frontend/ .
 RUN yarn build
 
 FROM nginx:1.16.0-alpine
