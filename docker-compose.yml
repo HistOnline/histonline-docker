@@ -1,16 +1,33 @@
-version: "3.1"
+version: "3"
 services:
   wordpress:
-    image: wordpress:php7.3-fpm-alpine
+    build: 
+      context: .
+      args:
+        WORDPRESS_UPSTREAM_VERSION: ${WORDPRESS_UPSTREAM_VERSION}
+        WORDPRESS_VERSION: ${WORDPRESS_UPSTREAM_VERSION}
     container_name: histonline_wordpress
     restart: always
     ports:
       - "${WORDPRESS_PORT}:80"
     environment:
       WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: admin
-      WORDPRESS_DB_PASSWORD: "@5571992540736"
-      WORDPRESS_DB_NAME: histonlinedb
+      WORDPRESS_DB_USER: ${MYSQL_USERNAME}
+      WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
+      WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
+      WORDPRESS_PORT: ${WORDPRESS_PORT}
+      MYSQL_USERNAME: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      WORDPRESS_DUMP_FILENAME: ${WORDPRESS_DUMP_FILENAME}
+    volumes:
+      - ./plugins:/var/www/html/wp-content/plugins
+      - ./themes:/var/www/html/wp-content/themes
+      - ./uploads:/var/www/html/wp-content/uploads
+      - ./phpinfo:/var/www/html/phpinfo
+      - ./wp-config.php:/var/www/html/wp-config.php
+      - ./.env:/var/www/.env
+      - ./migrate.sh:/var/www/migrate.sh
   db:
     image: mysql:8.0
     container_name: histonline_db
@@ -18,10 +35,10 @@ services:
       - "${MYSQL_PORT}:80"
     command: --default-authentication-plugin=mysql_native_password
     environment:
-      MYSQL_DATABASE: histonlinedb
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: "@5571992540736"
-      MYSQL_ROOT_PASSWORD: "@5571992540736"
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
     volumes:
       - ./dump:/docker-entrypoint-initdb.d
       - ./db_data:/var/lib/mysql
@@ -31,20 +48,35 @@ services:
       context: .
       dockerfile: Dockerfile.frontend
     restart: always
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - "${NGINX_PORT}:80"
     environment:
       NODE_ENV: production
+    depends_on: 
+      - db
+      - wordpress
+  frontend__dev:
+    container_name: histonline_frontend__dev
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend.dev
+    restart: always
+    ports:
+      - "${FRONTEND_DEV_PORT}:3000"
+    environment:
+      NODE_ENV: production
+      CHOKIDAR_USEPOLLING: "true"
+    depends_on: 
+      - db
+      - wordpress  
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: lithocenter_pma
+    container_name: histonline_pma
     links:
       - db:db
     ports:
       - "${PMA_PORT}:80"
     environment:
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: "@5571992540736"
-      MYSQL_ROOT_PASSWORD: "@5571992540736"
+      MYSQL_USER: ${MYSQL_USERNAME}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}

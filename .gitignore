@@ -1,2 +1,4 @@
 .env
 .env.frontend
+db_data
+wordpress_backup

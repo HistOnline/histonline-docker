@@ -1,0 +1,12 @@
+FROM node:14.17.6-alpine as build_stage
+
+RUN mkdir -p /home/node/app
+WORKDIR /home/node/app
+COPY frontend/package.json .
+COPY .env.frontend .env.development
+RUN yarn
+COPY /frontend .
+
+EXPOSE 3000
+
+ENTRYPOINT ["yarn", "start"]
