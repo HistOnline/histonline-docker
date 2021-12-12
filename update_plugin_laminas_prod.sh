@@ -8,3 +8,4 @@ rm -rf *
 rm -rf .git/
 put -R *
 quit
+EOF

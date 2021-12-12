@@ -14,9 +14,11 @@ docker-compose down --remove-orphans --volumes && sudo rm -rf db_data && docker-
 
 2. Coloque todos or arquivos nas respectivas pastas e execute o script de migração de dados informando o banco de dados a ser migrado
 ```sh
-# Para ambiente de desenvolvimento
+# Para ambiente de desenvolvimento adicionar o argumento -d como no exemplo abaixo
 docker exec -it histonline_wordpress bash -c "chmod +x migrate.sh && ./migrate.sh -d"
 ```
+
+Está pronto para desenvolvimento!
 
 ## Subindo para ambiente de produção
 
