@@ -22,6 +22,8 @@ Está pronto para desenvolvimento!
 
 ## Subindo para ambiente de produção
 
+Utilize os scripts produzidos para essa finalidade, lembre-se que as alterações no banco de dados devem ser feitas apenas no ambiente de produção
+
 ## Comandos úteis
 
 ```sh
