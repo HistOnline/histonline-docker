@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="353.56799mm"
+   height="264.16mm"
+   viewBox="0 0 353.56799 264.16"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (08b2f3d93c, 2022-04-05)"
+   sodipodi:docname="MuscularExterna.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.1572757"
+     inkscape:cx="1146.6584"
+     inkscape:cy="862.80215"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect69"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect65"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect61"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect57"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.000408163"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Muscular Externa">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 254.6235,265.6728 c 0.60634,-0.6706 1.4939,-0.96188 2.32732,-1.23684 0.72111,-0.23791 1.44342,-0.50253 2.06947,-0.95292 2.14992,-1.54669 4.53388,-2.73275 6.95789,-3.78093 2.20985,-0.95557 4.52081,-1.74263 6.53153,-3.09283 1.39916,-0.93954 2.69774,-2.01789 3.99386,-3.09211 0.84,-0.69619 1.70535,-1.36076 2.55668,-2.04298 0.83839,-0.67185 1.68785,-1.35348 2.69118,-1.77607 4.14819,-1.74717 8.31237,-3.54069 12.0937,-6.0024 1.38869,-0.90406 2.48945,-2.17805 3.91186,-3.04189 2.03677,-1.23694 4.20077,-2.27128 6.1419,-3.65849 0.91912,-0.65684 1.76637,-1.44617 2.83392,-1.86694 0.95242,-0.37539 2.03073,-0.45025 2.8997,-1.00563 0.36506,-0.23332 0.65051,-0.57531 1.05652,-0.75269 0.61696,-0.26954 1.28107,-0.40226 1.89435,-0.68867 1.53209,-0.71549 3.02094,-1.52672 4.60932,-2.12032 1.03702,-0.38755 2.12861,-0.70571 3.0345,-1.3574 0.67065,-0.48246 1.15862,-1.18684 1.89824,-1.58319 0.57177,-0.3064 1.17509,-0.54982 1.72091,-0.90824 1.08885,-0.71501 2.18254,-1.43173 3.38178,-1.96052 1.65997,-0.73195 3.0233,-1.9612 4.36182,-3.15649 1.24745,-1.11397 2.51275,-2.25984 4.03779,-2.98037 1.27584,-0.60279 2.7185,-0.8441 3.90174,-1.63233 0.71523,-0.47646 1.23358,-1.20113 2.0165,-1.59262 1.35295,-0.67653 2.75128,-1.2931 3.95624,-2.23369 0.21668,-0.16914 0.36729,-0.41565 0.59765,-0.56301 0.31627,-0.20231 0.69326,-0.27543 0.99205,-0.52301 1.46307,-1.21229 3.05001,-2.30488 4.79995,-3.05247 0.65389,-0.27935 1.50376,-0.28817 1.96354,-0.83829 0.18018,-0.21558 0.32141,-0.9061 0.49308,-0.68379 0.18069,0.23399 0.34967,0.56176 0.18489,0.85012"
+       id="path59"
+       inkscape:path-effect="#path-effect61"
+       inkscape:original-d="m 254.6235,265.6728 c 1.04852,-1.17133 3.06302,-1.20929 4.23226,-2.06984 1.99788,-1.47041 4.2836,-2.62884 6.57437,-3.65917 2.59662,-1.16789 5.22179,-1.99236 7.58108,-3.67765 1.96929,-1.40671 3.79309,-3.06096 5.71148,-4.52775 0.90368,-0.69096 1.76932,-1.51153 2.8352,-1.95896 4.1263,-1.73212 8.41951,-3.62115 12.22422,-6.04317 1.3489,-0.8587 2.40557,-2.11764 3.73917,-2.93843 2.00594,-1.23458 4.15452,-2.31579 6.14291,-3.64069 0.92046,-0.6133 1.71315,-1.40719 2.73249,-1.88503 1.00615,-0.47165 2.19358,-0.61008 3.16391,-1.10884 0.25633,-0.13176 0.50647,-0.40131 0.73962,-0.5729 0.52461,-0.38611 1.40726,-0.51282 1.99284,-0.77619 1.38186,-0.62149 2.68131,-1.36263 4.08845,-1.94046 1.19978,-0.49269 2.60299,-0.88133 3.69808,-1.57086 0.64563,-0.40653 1.07934,-1.03644 1.68468,-1.45997 0.57198,-0.40018 1.26071,-0.60146 1.84904,-0.97948 1.10471,-0.70981 2.20837,-1.52527 3.43101,-2.03287 3.15992,-1.3119 5.14406,-4.33166 8.13578,-5.98774 1.34101,-0.74233 2.91304,-1.01346 4.21169,-1.77414 0.74866,-0.43851 1.2595,-1.22451 2.0134,-1.60782 1.48862,-0.75685 3.41498,-1.49367 4.56099,-2.75362 0.25382,-0.27906 0.72949,-0.30333 1.02725,-0.55441 1.39485,-1.17629 3.04747,-2.28326 4.74585,-3.0678 0.62836,-0.29025 1.56562,-0.53414 2.11614,-0.90555 0.0481,-0.0324 0.49147,-0.6859 0.49308,-0.68379 0.19039,0.25034 0.3457,0.5608 0.18489,0.85012" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 354.53338,208.34579 c -0.32179,18.60474 17.63997,55.52974 -0.96538,55.81421 -32.9815,0.50427 -65.963,1.00853 -98.9445,1.5128"
+       id="path63"
+       inkscape:path-effect="#path-effect65"
+       inkscape:original-d="M 354.53338,208.34579 353.568,264.16 l -98.9445,1.5128" />
+  </g>
+</svg>
